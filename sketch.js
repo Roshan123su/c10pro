@@ -8,7 +8,7 @@ seaImg    = loadImage("sea.png")
 
 function setup(){
   createCanvas(400,400);
-  sea = createSprite(200,200);
+  sea = createSprite(400,200);
   sea.addImage(seaImg);
   sea.scale = 0.4
 
@@ -22,7 +22,7 @@ function draw() {
   
   sea.velocityX = -2;
   if(sea.x < 0){
-     sea.x = sea.width/2;
+     sea.x = sea.width/8;
 
     
   }
